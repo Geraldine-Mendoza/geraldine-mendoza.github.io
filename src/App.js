@@ -1,7 +1,15 @@
 import React, { Component } from 'react'
 import Menu from './Menu'
+import Home from './Home'
+import Projects from './Projects'
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 class App extends Component {
 
@@ -9,34 +17,49 @@ class App extends Component {
   	menuCategories: [
   	{ 
   		name: 'Home',
-  	  	subCat: []
+  	  subCat: []
   	},
   	{ 
   		name: 'About',
-  	  	subCat: []
+  	  subCat: []
   	},
   	{ 
   		name: 'Contact',
-  	  	subCat: []
+  	  subCat: []
   	},
   	{ 
   		name: 'Projects',
-  	  	subCat: []
+  	  subCat: []
   	}
   	]
   }
 
   render() {
 	  return (
+	  	<Router>
 	  	<div>
-	  	<link
-  rel="stylesheet"
-  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-  crossorigin="anonymous"
-/>
+	  	
 	      <Menu categories={this.state.menuCategories} />
+
+	      <Switch>
+          {/** <Route path="/About">
+            <About />
+          </Route>
+          <Route path="/Users">
+            <Users />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>*/}
+          <Route path="/Home">
+            <Home />
+          </Route>
+          <Route path="/Projects">
+            <Projects />
+          </Route>
+        </Switch>
 	    </div>
+	    </Router>
 	  );
 	}
 }
