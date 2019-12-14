@@ -22,8 +22,8 @@ class Menu extends Component {
 		const { categories } = this.props;
 		console.log(categories);
 		return (
-				<div>
-				<Navbar bg="dark" expand="lg" variant="dark">
+
+				<Navbar bg="dark" expand="lg" variant="dark" sticky="top">
 		  	<Navbar.Brand href="#Home">ME</Navbar.Brand>
 		  	<Navbar.Toggle aria-controls="basic-navbar-nav" />
 		  	<Navbar.Collapse id="basic-navbar-nav">
@@ -32,7 +32,7 @@ class Menu extends Component {
 		    </Nav>
 		  	</Navbar.Collapse>
 				</Navbar>
-      </div>
+
 		);
 	}
 }

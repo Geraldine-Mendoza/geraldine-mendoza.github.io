@@ -17,3 +17,8 @@ li a {
 li a:hover {
   background-color: #FFFFFF;
 }
+
+.Navbar {
+	position: fixed;
+  top: 0;
+}

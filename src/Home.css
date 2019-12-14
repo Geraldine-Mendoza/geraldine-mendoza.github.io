@@ -1,0 +1,41 @@
+.profilepic {
+	max-width: 300px;
+	min-width: 250px;
+	margin: 0 auto;
+	max-height: 200px;
+}
+
+.profile {
+	display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 40%;
+    padding: 2em;
+}
+
+.about-me {
+	min-width: 300px;
+	width: 100%;
+	display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2em;
+}
+
+.about-me p {
+	vertical-align: middle;
+	text-align: justify;
+}
+
+.home-all {
+	height: 100%;
+	display: flex;
+}
+
+.home-and-button {
+	background-color: #ADA8AF;
+}
+
+.button {
+	padding-bottom: 2em;
+}

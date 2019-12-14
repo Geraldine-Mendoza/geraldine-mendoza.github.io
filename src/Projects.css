@@ -1,0 +1,17 @@
+
+.card-deck {
+	max-width: 1200px;
+}
+
+.project-card {
+	max-width: 330px;
+}
+
+.projects-overview {
+	width: 100%;
+	text-align: center;
+	padding-top: 0.8em;
+}
+
+.projects-overview h1 {
+}

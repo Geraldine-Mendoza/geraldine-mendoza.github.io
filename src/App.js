@@ -30,7 +30,7 @@ class App extends Component {
 
   render() {
 	  return (
-	  	<div>
+	  	<div style={{ "background-color": "white"}}>
 	  	
 	      <Menu categories={this.state.menuCategories} />
 	      <Home />
