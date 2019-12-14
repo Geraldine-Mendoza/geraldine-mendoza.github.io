@@ -39,7 +39,7 @@ class Projects extends Component {
 
 	render() {
 		return (
-		<div>
+		<div id="Projects">
 			{makeCards(this.state.gitProjects)}
 		</div>
 		);

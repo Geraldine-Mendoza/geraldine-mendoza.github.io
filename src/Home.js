@@ -9,7 +9,7 @@ class Home extends Component {
 		const { categories } = this.props;
 		console.log(categories);
 		return (
-		<div>
+		<div id="Home">
 			<Jumbotron fluid>
 				<p> Hi pls hire me </p>
 			</Jumbotron>
