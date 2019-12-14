@@ -15,7 +15,7 @@
 
 .about-me {
 	min-width: 300px;
-	width: 100%;
+	max-width: 50%;
 	display: flex;
     align-items: center;
     flex-wrap: wrap;

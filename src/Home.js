@@ -22,14 +22,17 @@ class Home extends Component {
 				<Image src={profilepic} alt="Geraldine Mendoza" thumbnail className="profilepic" />
 			</Col>
 			<Col className="md-5 about-me text-center">
-				<p> Hi pls hire me </p>
-				<p>A paragraph is a series of related sentences developing a central idea, called the topic. Try to think about paragraphs in terms of thematic unity: a paragraph is a sentence or a group of sentences that supports one central, unified idea. Paragraphs add one idea at a time to your broader argument. </p>
+				<p> Hi pls hire me <br />
+				 University of Waterloo <br />
+				Candidate for B.A.Sc in Honours <br />
+				Computer Science</p>
+				
 			</Col>
 			</Row>
 			</Container>
 		</div>
 		<div className="text-center button">
-			<Button>Learn More!</Button>
+			<Button href="#Projects">Learn More!</Button>
 		</div>
 		</div>
 		);

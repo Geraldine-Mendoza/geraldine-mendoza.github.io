@@ -1,17 +1,35 @@
 
+
 .card-deck {
-	max-width: 1200px;
+	height: 100%;
+	width: 100%;
 }
 
 .project-card {
-	max-width: 330px;
+	width: 300px;
 }
 
 .projects-overview {
 	width: 100%;
 	text-align: center;
 	padding-top: 0.8em;
+	padding-bottom: 0px;
+	margin-bottom: 0;
 }
 
 .projects-overview h1 {
+	margin-bottom: 0;
+	padding-bottom: 0px;
+}
+
+.projects-all {
+	width: 100%;
+	display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.card-row {
+	margin: 2em;
+	padding: 0;
 }
