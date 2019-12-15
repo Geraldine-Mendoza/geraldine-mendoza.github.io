@@ -7,7 +7,8 @@ function CatList(categories) {
 	console.log(categories);
 	const rows = categories.map((cat, index) => {
 		return (
-			<Nav.Link href={"#" + cat.name}>{cat.name}
+			<Nav.Link href={"#" + cat.name}>
+			{cat.name}
 			</Nav.Link>
 		);
 	})
@@ -26,7 +27,7 @@ class Menu extends Component {
 				<Navbar bg="dark" expand="lg" variant="dark" sticky="top">
 		  	<Navbar.Brand href="#Home">ME</Navbar.Brand>
 		  	<Navbar.Toggle aria-controls="basic-navbar-nav" />
-		  	<Navbar.Collapse id="basic-navbar-nav">
+		  	<Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
 		    <Nav>
 		      {CatList(categories)}
 		    </Nav>

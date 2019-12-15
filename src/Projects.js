@@ -26,7 +26,7 @@ function makeCards(projects, openModalWith) {
 			<Card.Text>
 			{project.description}
 			</Card.Text>
-			<Button variant="primary" 
+			<Button className="project-button" variant="primary" 
 			onClick={() => {openModalWith(project)}}>Learn More</Button>
 			</Card.Body>
 			</Card>
@@ -36,24 +36,6 @@ function makeCards(projects, openModalWith) {
 	})
 	return cards;
 }
-
-/*function ModalControl(allProjects){
-	const [modalInitial, setModalControl] = useState([false, null]);
-
-	return(
-	<Row className="card-row">
-	{ makeCards(allProjects, setModalControl, setModalProject) }
-	<Modal show={modalInitial[0]} onHide={setModalControl([false, null])}>
-		<Modal.Header closeButton />
-
-		<Modal.Body>modalInitial[1].name</Modal.Body>
-
-
-	</Modal>
-	</Row>
-	);
-
-}*/
 
 class Projects extends Component {
 
@@ -101,19 +83,6 @@ class Projects extends Component {
 		})
 	}
 
-	/*
-	setModalProject = project => {
-		const currProject = this.state.currProject;
-		this.setState({
-			currProject: project
-		})
-	}
-
-	startModalShow = () => {
-		const setModalShow = this.state.setModalShow;
-		this.setState({ setModalShow: true});
-	}*/
-
 	render() {
 		const allProjects = this.state.gitProjects;
 		//console.log(allProjects)
@@ -125,10 +94,11 @@ class Projects extends Component {
 			<h1>Projects</h1>
 		</div>
 
-		<Modal show={this.state.isModalOpen} 
-		onHide={() => this.setState({gitProjects: this.state.gitProjects,
-			isModalOpen: false,
-			openProject: this.state.openProject})} 
+		<Modal 
+			show={this.state.isModalOpen} 
+			onHide={() => this.setState({gitProjects: this.state.gitProjects,
+				isModalOpen: false,
+				openProject: this.state.openProject})} 
       size="lg"
       aria-labelledby="contained-modal-title-vcenter"
       centered>
@@ -137,16 +107,19 @@ class Projects extends Component {
 			<Modal.Body>
 
 			<h1>{this.state.openProject.name}</h1> <hr />
+			<div className="modal-image">
 			<Image src={sample_project} />
+			</div>
 			<p>{this.state.openProject.description}</p>
 
 			</Modal.Body>
 		</Modal>
 
 		<Container className="card-deck mx-auto">
+		<Row className="card-row">
 		{allProjects.map( (project, indx) => {
 			return(
-			<Col style={{"maxWidth": "330px", "paddingBottom": "2em", margin: "0 auto", "minWidth": "300px"}}>
+			<Col style={{"maxWidth": "340px", "paddingBottom": "2em", margin: "0 auto", "minWidth": "300px"}}>
 			<Card className="project-card">
 			<Card.Img variant="top" src={sample_project} />
 			<Card.Body>
@@ -159,6 +132,7 @@ class Projects extends Component {
 			</Card.Body>
 			</Card>
 			</Col>);})}
+		</Row>
 		</Container>
 
 		{/*<makeModal 
