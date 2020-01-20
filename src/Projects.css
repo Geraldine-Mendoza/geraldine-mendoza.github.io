@@ -6,7 +6,15 @@
 }
 
 .project-card {
-	max-width: 330px;
+	max-width: 360px;
+	box-shadow: 2px 8px 45px rgba(0, 0, 0, .05);
+	margin: 0 auto;
+	float: none;
+}
+
+.project-card:hover {
+	box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
+  	transform: translate3D(0, -2px, 0);
 }
 
 .projects-overview {
@@ -41,17 +49,18 @@
 }
 
 
-.btn-primary, .btn-primary:active, .btn-primary:visited {
-    background-color: #4F3759 !important;
-    border-color: #4F3759 !important;
-}
-
-.btn-primary:hover {
-	background-color: #8064A2 !important;
-	border-color: #8064A2 !important;
-}
-
-
 .project-button {
-	backgroundColor: #A07DAE;
+	/*backgroundColor: #A07DAE;*/
 }
+
+@media screen and (max-width: 600px) {
+	.project-card {
+		max-width: 90%;
+	}
+
+
+
+
+}
+
+

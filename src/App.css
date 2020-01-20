@@ -21,12 +21,18 @@
   color: white;
 }
 
-.button-div {
-  display: inline;
+.btn, .btn-link {
+  background-color: #9ca6d9 !important;
+  border-width: 0px !important;
+  margin-bottom: 15px;
 }
 
-.Button {
-  background-color: #A07DAE;
+.btn:hover, .btn-link:hover {
+  background-color: #aeb7e0 !important;
+}
+
+a {
+  text-decoration: none !important;
 }
 
 @media screen and (min-width: 1001px) {

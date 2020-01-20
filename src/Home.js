@@ -18,7 +18,7 @@ class Home extends Component {
 		<div className=" home-all">
 			<Container  className="mt-lg-4 mt-md-5 mt-sm-1 mt-xs-1">
 			<Row className="justify-content-md-center">
-			<Col className="profile md-5">
+			<Col className="profile no-gutters">
 				<Image src={profilepic} alt="Geraldine Mendoza" thumbnail className="profilepic" roundedCircle />
 			</Col>
 			<Col className="md-5 about-me">

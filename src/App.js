@@ -18,21 +18,20 @@ function Contact() {
 		<Row className="justify-content-center">
 			<h1>Contact</h1>
 		</Row>
-		<Row>
-		<Col>
-			<Button block href="https://github.com/Geraldine-Mendoza">
-			<div className="button-div">
+		<Row className="justify-content-center">
+		<Col style={{'minWidth': '260px'}}>
+		<a href="https://github.com/Geraldine-Mendoza">
+		<Button style={{'background-color':'#9ca6d9 !important'}} block>
 			<h3>Github</h3>
-			</div>
-
-			</Button>
+		</Button>
+		</a>
 		</Col>
-		<Col>
+		<Col style={{'minWidth': '260px'}}>
 		<Button block>
 			<h3>LinkedIn</h3>
 		</Button>
 		</Col>
-		<Col>
+		<Col style={{'minWidth': '260px'}}>
 			<Button block>
 			<div className="button-div">
 			<h3>Email</h3>
@@ -51,7 +50,9 @@ function About() {
 		<div>
 		<h1 style={{"text-align": "center"}}>About Me</h1>
 		<hr />
-		<p style={{"text-align": "justify"}}>Wow im such an interesting person arent i how are you have you watched the show You? it was pretty interesting i gues i dunno i havent finished it yet and this is a paragraph, a group of related sentences. Wow im such an interesting person arent i how are you have you watched the show You? it was pretty interesting i gues i dunno i havent finished it yet and this is a paragraph, a group of related sentences. Wow im such an interesting person arent i how are you have you watched the show You? it was pretty interesting i gues i dunno i havent finished it yet and this is a paragraph, a group of related sentences</p>
+		<p style={{"text-align": "justify"}}>Hi, I'm Geraldine Mendoza, a Computer Science student at the University of Waterloo. I was born in Colombia and later moved to Canada; I'm currently in my 1A term. I'm interested in web-design, 
+
+			I love learning :( </p>
 		</div>
 		</Jumbotron>
 	)
@@ -86,10 +87,10 @@ class App extends Component {
 	  	
 	      <Menu categories={this.state.menuCategories} />
 	      <Home />
-	      <About />
+	      {/*<About />*/}
 	      <Projects />
 	      <Contact />
-	      <div style={{height: "10vh"}}></div>
+	      <div style={{height: "8vh"}}></div>
 	    </div>
 	  );
 	}

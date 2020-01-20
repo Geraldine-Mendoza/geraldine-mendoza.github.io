@@ -42,28 +42,28 @@ class Projects extends Component {
 	state = {
 		gitProjects: [
 			{
-				name: "Notes",
-				shortDesciption: "This is short wow.",
-				description: "Pretty notes app."
+				name: "Pretty Notes",
+				shortDescription: "A note-taking app created to keep text snippets in a clean, minimalist space.",
+				description: "Pretty notes app.",
 			},
 			{
-				name: "Reading Calendar",
-				shortDesciption: "This is short wow.",
+				name: "Track-Your-Reading",
+				shortDescription: "An app for younger students to track their reading through calendar, achievement and shelf features.",
 				description: "For annoying little kids."
 			},
 			{
-				name: "Third Project",
-				shortDesciption: "This is short wow.",
+				name: "Github-hub",
+				shortDescription: "A website allowing employers to check the quality of a Github user's code through complexity metrics.",
 				description: "I don't know what this is."
 			},
 			{
-				name: "Third Project",
-				shortDesciption: "This is short wow.",
+				name: "Blink",
+				shortDescription: "A website designed to measure your blink-rate while using a computer, helping you determine if this metric puts you at risk for dry eyes.",
 				description: "I don't know what this is."
 			}
 		],
 		isModalOpen: false,
-		openProject: {name: null, shortDesciption: null, description: null}
+		openProject: {name: null, shortDescription: null, description: null}
 	}
 
 	openModalWith(item) {
@@ -79,7 +79,7 @@ class Projects extends Component {
 		this.setState({
 			gitProjects: this.state.gitProjects,
 			isModalOpen: false,
-			openProject: {name: null, shortDesciption: null, description: null}
+			openProject: {name: null, shortDescription: null, description: null}
 		})
 	}
 
@@ -119,13 +119,13 @@ class Projects extends Component {
 		<Row className="card-row">
 		{allProjects.map( (project, indx) => {
 			return(
-			<Col style={{"maxWidth": "340px", "paddingBottom": "2em", margin: "0 auto", "minWidth": "300px"}}>
+			<Col style={{"maxWidth": "380px", "paddingBottom": "2em", margin: "0 auto", "minWidth": "300px"}}>
 			<Card className="project-card">
 			<Card.Img variant="top" src={sample_project} />
 			<Card.Body>
 			<Card.Title>{project.name}</Card.Title>
 			<Card.Text>
-			{project.description}
+			{project.shortDescription}
 			</Card.Text>
 			<Button variant="primary" 
 			onClick={() => {this.openModalWith(project)}}>Learn More</Button>
